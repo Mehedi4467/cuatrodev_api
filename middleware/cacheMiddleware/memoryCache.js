@@ -12,7 +12,7 @@ export const memoryCacheMiddleware = (req, res, next) => {
   res.sendResponse = res.send;
   res.send = (body) => {
     // cache.put(key, body, 86400 * 1000); 
-    cache.put(key, body, 60 * 1000); 
+    cache.put(key, body, 1200 * 1000); 
     res.sendResponse(body);
   };
 
