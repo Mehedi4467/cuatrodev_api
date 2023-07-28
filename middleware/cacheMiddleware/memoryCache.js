@@ -4,7 +4,7 @@ export const memoryCacheMiddleware = (req, res, next) => {
   const cachedResponse = cache.get(key);
 
   if (cachedResponse) {
-    console.log('this catch response',cachedResponse);
+    console.log('this catch response');
     res.send(JSON.parse(cachedResponse));
     return 0;
   }
