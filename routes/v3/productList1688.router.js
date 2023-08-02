@@ -6,7 +6,6 @@ import { memoryCacheMiddleware } from '../../middleware/cacheMiddleware/memoryCa
 const router = express.Router();
 router
   .route('/:api_key([A-Za-z]{10}\\d{10}[A-Za-z]{10}\\d{5}[A-Za-z]{5})')
-  .all(verifyApiKeyUser,memoryCacheMiddleware)
+  .all(verifyApiKeyUser, memoryCacheMiddleware)
   .get(getProductV3);
 export default router;
- 

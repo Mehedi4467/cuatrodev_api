@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const app = express();
 dotenv.config();
 
@@ -21,8 +21,6 @@ import amazonProductList from './routes/v1/amazonProductList.router.js';
 import userPost from './routes/v1/creareUser.router.js';
 import productDetails from './routes/v1/amazonproductDetails.router.js';
 import productList1688V3 from './routes/v3/productList1688.router.js';
-
-
 
 // database connection
 app.use(async (req, res, next) => {
