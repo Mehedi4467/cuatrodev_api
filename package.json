@@ -20,7 +20,7 @@
   "author": "Md.Mehedi Hassan",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "bing-translate-api": "^2.9.1",
     "body-parser": "^1.20.2",
     "cheerio": "^1.0.0-rc.12",
